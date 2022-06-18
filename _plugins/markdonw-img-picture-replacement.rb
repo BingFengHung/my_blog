@@ -7,7 +7,7 @@ Jekyll::Hooks.register :posts, :pre_render do |post, payload|
   # only process if we deal with a markdown file
   if payload['site']['markdown_ext'].include? docExt
     # newContent = post.content.gsub(/\!\[(.+)\]\((.+)\)/, '{% picture default \2 alt="\1" %}')
-    newContent = post.content.gsub(/\!\[(.+)\]\((.+)\)/, '{% picture %}')
+    newContent = post.content.gsub(/\!\[(..+)\]\((..+)\)/, '{% picture %}')
     post.content = newContent
   end
 end
