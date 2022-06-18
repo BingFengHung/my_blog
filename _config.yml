@@ -40,6 +40,3 @@ defaults:
       type: post
     values:
       tags: Other
-
-picture:
-  - source: "https://bingfenghung.github.io/my_blog/"
