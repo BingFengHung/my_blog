@@ -8,7 +8,7 @@ Jekyll::Hooks.register :documents, :pre_render do |document, payload|
   if payload['site']['markdown_ext'].include? docExt
 		#newContent = document.content.tr('../assets', '{{site.url}}/assets')
 		newContent = document.content.gsub(/..\/assets/, '{{site.url}}/assets')
-    newContent = document.content.gsub(/!\[(.*)\]\(([^\)]+)\)(?:{:([^}]+)})*/, '{% picture default \2 --alt \1  %}')
+    # newContent = document.content.gsub(/!\[(.*)\]\(([^\)]+)\)(?:{:([^}]+)})*/, '{% picture default \2 --alt \1  %}')
     document.content = newContent
   end
 end
