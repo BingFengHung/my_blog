@@ -19,7 +19,7 @@ github_username: "BingFengHung"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
-
+url: 'https://bingfenghung.github.io/my_blog'
 rss: rss
 
 kramdown:
