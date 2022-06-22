@@ -20,8 +20,7 @@ github_username: "BingFengHung"
 #########################################################################################
 theme: "minima"
 url: 'https://bingfenghung.github.io/my_blog'
-root: 'https://bingfenghung.github.io/my_blog'
-baseurl: 'https://bingfenghung.github.io/my_blog'
+baseurl: '/my_blog'
 rss: rss
 
 kramdown:
